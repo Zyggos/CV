@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anastasios Zyngiridis CV">
+    <meta name="keywords" content="Anastasios Zyngiridis CV">
+    <meta name="author" content="Anastasios Zyngiridis">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Anastasios Zyngiridis CV</title>
+</head>
+<body>
+
+
+
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark mb-md-5 shadow-5-strong hidden" id="nav_elem">
+      
+
+            <!-- Navbar toggler -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Expand">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <!-- Navigation Listed Links -->
+            <div class="collapse navbar-collapse" id="navbar">
+
+
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#about_me" class="nav-link">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+
+
+        </div>
+    </nav>
+
+    <div class="container mt-5" id="body_container">
+
+        <div class="row mb-5 pb-md-5 mb-3 " id="about_me">
+
+
+            <div class="clearfix">
+
+                <img src="icons/boo.jpg" class="img-thumbnail col-md-6 float-md-end mb-3 ms-md-3 rounded hidden animate-slide-right" alt="Me" id="me_icon">
+
+                <!--Jumbotron-->
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-3" id="head_jumbo">Zyngiridis Anastasios</h1>
+                        <p class="lead" id="lead_jumbo">Computer Science Student</p>
+                    </div>
+                </div>
+
+                <!--Intro text in list-->
+                <ul>
+                    <li class="ms-3 ms-md-4 pt-md-5 hidden unblur text-chain">Hi, my name is Anastasios, I'm from Thessaloniki, and I am currently a computer science student at the Aristotle University of Thessaloniki.</li>
+                    <li class="ms-3 ms-md-4 pt-md-4 hidden unblur text-chain">My interests include software & web development and machine learning.</li>
+                    <li class="ms-3 ms-md-4 pt-md-4 hidden unblur text-chain">Seeking opportunities for internships where I can apply my skills and begin building my career.</li>
+                </ul>
+
+                <!--Icon bar-->
+                <div class="container mt-md-5 align-items-center hidden animate-slide-left fast">
+
+                    <a class="btn btn-link" href="https://github.com/Zyggos" target="_blank"><i class="fa fa-github fa-3x " aria-hidden="true"></i></a>
+                    <a class="btn btn-link " href="" target="_blank"><i class="fa fa-linkedin fa-3x " aria-hidden="true"></i></a>
+                    <a class="btn btn-link" href="" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spacer mb-md-2"></div>
+
+        <div class="row mt-5 rounded hidden animate-slide-left slow" id="education">
+
+            <!--colored header-->
+            <div class="container pt-2 pb-1" id="education_head_cont">
+                <h1 class="" id="edu_header">Education</h1>
+            </div>
+
+            <div id="education_body_cont">
+                <div class="row">
+
+
+                    <section class="col-md-6 pt-2 pt-md-4">
+
+                        <ul>
+                            <li>
+                                <h3>
+                                    Computer Science,
+                                    <small>Aristotle University of Thessaloniki</small>
+                                </h3>
+                                <p>2020 - Present</p>
+                                <p class="grade">Current Grade: 7.2</p>
+                            </li>
+                          
+                        </ul>
+                    </section>
+
+                    <!--Table with subjects/grades-->
+                    <section class="col-md-6 pt-2 pt-md-3 pb-1 pe-md-5">
+                        <table class="table table-bordered" id="edu_table">
+                            <thead class="">
+                            <tr>
+                                <th class="col-8 table_head">Course</th>
+                                <th class="col-4 table_head">Grade</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Computational Theory</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Multimedia Systems</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Devices Interfaces</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                  <td>Mobile Application Development</td>
+                                  <td>7.5</td>
+                                </tr>
+                                <tr>
+                                    <td>World Wide Web Information Systems</td>
+                                    <td>7.4</td>
+                                </tr>
+                                <tr>
+                                  <td>Linear Algebra</td>
+                                  <td>7</td>
+                              </tr>
+                                
+    
+                                </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="row mt-5 mb-5 rounded hidden animate-slide-right slow" id="skills">
+
+            <!--colored header-->
+            <div class="container pt-2 pb-1" id="skills_head_cont">
+                <h1 id="skills_header">Skills</h1>
+            </div>
+
+
+            <section class="col-md-12 mt-2 mt-md-3">
+                <ul>
+                    <li>
+                        <h4>Programming Languages</h4>
+                        <p>Python, Java, C, C++, SQL, HTML, CSS, PHP, JavaScript</p>
+                    </li>
+                    <li>
+                        <h4>Frameworks</h4>
+                        <p>Flask,Bootstrap, React, Angular, PyTorch, scikit-learn, NumPy, Matplotlib</p>
+                    </li>
+                    <li>
+                        <h4>Tools</h4>
+                        <p>Git, GitHub, Jupyter Notebook, Visual Studio Code, PyCharm, IntelliJ IDEA, Eclipse, MySQL Workbench, Microsoft Office</p>
+                    </li>
+                    <li>
+                        <h4>Languages</h4>
+                        <p>Greek (Native), English (Proficient)</p>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <div class="row mt-1 mb-1"></div>
+
+        <div class="row mt-4 rounded hidden unblur" id="portfolio">
+
+            <!--colored header-->
+            <div class="container pt-2 pb-1" id="port_head_cont">
+                <h1>Portfolio</h1>
+            </div>
+
+            <!--Body of Portfolio-->
+            <div class="row mt-3">
+
+                <!-- Carousel -->
+                <div class="col-md-8 mb-4 hidden animate-slide-up">
+                    <div
+                            id="carouselExampleCaptions"
+                            class="carousel carousel-dark slide"
+                            data-bs-interval="5000"
+                            data-bs-ride="carousel"
+                    >
+                        <div class="carousel-indicators">
+                            <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleCaptions"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"
+                            ></button>
+                            <button
+                                    type="button"
+                                    data-bs-target="#carouselExampleCaptions"
+                                    data-bs-slide-to="1"
+                                    aria-current="true"
+                                    aria-label="Slide 2"
+                            ></button>
+                           
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img
+                                        src="icons/CNN.png"
+                                        class="d-block w-100 rounded"
+                                        alt="Convolutional Neural Network"
+                                />
+
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                        src="icons/knn-centroid.png"
+                                        class="d-block w-100 rounded"
+                                        alt="knn neighbor and centroid classifier on CIFAR-10 database"
+                                />
+
+                            </div>
+                            
+                        </div>
+                        <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="prev"
+                        >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleCaptions"
+                                data-bs-slide="next"
+                        >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!--slide info col-->
+                <div class="col-md-4 mb-4 mt-3 hidden animate-slide-up" id="textColumn">
+
+                    <!-- Add a head title-->
+                    <h3 class="text-center" id="carousel_Title">Convolutional Neural Network</h3>
+                    <hr>
+                    <p class="mt-md-5" id="carousel_descr">
+                        A Convolutional Neural Network build to train on the CIFAR-10 dataset and correctly classify images.
+                    </p>
+                    <div class="text-center">
+
+                        <!-- Add a button-->
+                        <a href="https://github.com/Zyggos/CNN" target="_blank" class="text-center btn btn-dark mt-5" id="carousel_btn">
+                            Explore Repository  <i class=" ps-2 fa fa-github"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- First card -->
+                <div class="col-md-4 mb-4 hidden card-to-animate">
+                    <div class="card h-100">
+
+                        <img class="card-img-top" src="icons/KnowledgeRealm.png" alt="">
+
+                        <div class="card-body">
+
+                            <h4 class="card-title">
+                                KnowledgeRealm, a mobile quiz game app
+                            </h4>
+
+                            <p class="card-text">The game is implemented in Java, uses firebase for storing login and leaderboard data and has a quiz API for loading questions.  </p>
+
+                            <div class="text-end">
+                                <a href="https://github.com/Zyggos/KnowledgeRealm" class="btn btn-dark" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Second card -->
+                <div class="col-md-4 mb-4 hidden card-to-animate">
+                    <div class="card h-100">
+
+                        <img class="card-img-top img-fit" src="icons/ps-system-icon.png" alt="PSS system icon">
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                MyBooking App
+                            </h4>
+
+                            <p class="card-text">A simple booking program that is implemented with Java and uses Java swing for graphics.</p>
+
+                            <div class="text-end">
+                                <a href="https://github.com/Zyggos/myBooking" class="btn btn-dark" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Third card -->
+                <div class="col-md-4 mb-4 hidden card-to-animate">
+                    <div class="card h-100">
+
+                        <img class="card-img-top img-fit" src="icons/compiler_icon.png" alt="Alpha Compiler/VM">
+
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Auth Website
+                            </h4>
+                            <p class="card-text">A dynamic website that uses a hand build API and a MongoDB database to store, search and do content based filtering on products. </p>
+
+                            <div class="text-end">
+                                <a href="https://github.com/Zyggos/AuthWebsite" class="btn btn-dark" target="_blank"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+       
+
+        <footer class="footer mt-2 mt-md-5">
+            <div class="container text-center">
+                <a class="btn btn-link" href="https://github.com/Zyggos" target="_blank"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
+                <a class="btn btn-link " href="" target="_blank"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+                <a class="btn btn-link" href="" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+
+            </div>
+            <div class="h4 title text-center">Anastasios Zyngiridis </div>
+            <div class="text-center text-muted">
+                <p>&copy;Copyright of Zyggo</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

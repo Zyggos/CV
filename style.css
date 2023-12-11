@@ -1,0 +1,359 @@
+html {
+  scroll-padding-top: 100px;
+}
+body {
+  background: #002234;
+
+  padding-top: 100px;
+  color: #c5d6e0;
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+}
+
+/* NAV BAR */
+#nav_elem {
+  background-color: rgb(0, 34, 52, 0.8);
+}
+
+#navbar {
+  justify-content: center;
+}
+
+#navbar a {
+  color: #39fd14;
+  font-size: 1.1em;
+}
+
+#pi_icon {
+  max-height: 75px;
+  max-width: 55px;
+}
+
+#music_div {
+  text-align: right;
+}
+
+#music_btn {
+  /*background-color: #f08400;*/
+  color: #ff0026;
+}
+/*----------------------------------*/
+
+#me_icon {
+  max-height: 100%;
+  max-width: 700px;
+}
+
+#me_icon:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* ABOUT ME - HEADERS*/
+#head_jumbo {
+  color: white;
+}
+
+#lead_jumbo {
+  color: #39fd14;
+}
+
+/*set the color for each elemnt in the i class*/
+#about_me i {
+  color: #ff0026;
+}
+
+/* EDUCATION DIV */
+/*-----------------*/
+
+#education_head_cont {
+  background-color: rgb(0, 38, 65);
+}
+
+#education_body_cont section {
+  /*background-color: rgb(90, 2, 1, 0.1);*/
+  background-color: rgb(0, 41, 69);
+}
+
+/*table*/
+#education th {
+  background-color: rgb(0, 38, 55, 0.8);
+  color: #39fd14;
+  font-weight: bold;
+}
+
+#education td {
+  background-color: rgb(2, 38, 60, 0.5);
+  color: #c5d6e0;
+}
+
+table.table-bordered {
+  border: 1px solid #000000;
+}
+
+table.table-bordered > thead > tr > th {
+  border: 1px solid #000000;
+}
+
+table.table-bordered > thead > tr > td {
+  border: 1px solid #000000;
+}
+
+#edu_header {
+  color: #ffffff;
+}
+
+#education h3 {
+  color: #39fd14;
+}
+
+.grade {
+  font-weight: bold;
+}
+/*-----------------*/
+
+/*    SKILL DIV   */
+/*-------------------------*/
+#skills_head_cont {
+  background-color: rgb(0, 38, 65);
+}
+
+#skills {
+  background-color: rgb(0, 41, 69);
+}
+
+#skills_header {
+  color: white;
+}
+
+#skills h4 {
+  color: #39fd14ff;
+}
+/*-------------------------*/
+
+/*    Portfolio DIV   */
+/*-------------------------------*/
+#port_head_cont {
+  background-color: rgb(0, 38, 65);
+}
+
+#portfolio {
+  background-color: rgb(0, 41, 73);
+}
+
+/*paint all buttons in portfolio*/
+#portfolio a {
+  background-color: #ff0026;
+}
+
+#carousel_Title {
+  color: #39fd14ff;
+  font-weight: bold;
+}
+
+.card .img-fit {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* turn off border from card */
+.card {
+  border: none;
+}
+
+.card-body {
+  background-color: rgb(0, 38, 62);
+}
+
+.card-title {
+  color: #39fd14ff;
+  font-weight: bold;
+}
+/*-------------------------------*/
+
+/* YOUTUBE DIV*/
+#yt_head {
+  color: #ffffff;
+}
+
+#embed_yt {
+  width: 1024px;
+  height: 576px;
+}
+/*-------------------------*/
+
+/* FOOTER DIV */
+
+footer {
+  background-color: rgb(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+/*---------------------------*/
+
+/*#differnces for mobile*/
+@media (max-width: 767.98px) {
+  .card .img-fit {
+    aspect-ratio: 1.45 / 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .animate-slide-right {
+    transform: translateX(50%); /* Initially, off-screen to the right */
+    transition: opacity 1s, transform 1.6s;
+  }
+
+  .show.animate-slide-right {
+    opacity: 1; /* When shown, make it visible */
+    transform: translateX(0); /* Sliding in from the right when shown */
+  }
+
+  .animate-slide-left.fast {
+    transform: translateX(-40%); /* Initially, off-screen to the left */
+    transition: opacity 1s, transform 1.3s;
+  }
+
+  .show.animate-slide-left.fast {
+    opacity: 1; /* When shown, make it visible */
+    transform: translateX(0); /* Sliding in from the left when shown */
+  }
+
+  .hidden.unblur {
+    filter: blur(5px);
+    transition: all 1s;
+  }
+
+  .show.unblur {
+    filter: blur(0px);
+  }
+
+  /*unblur slow*/
+  .hidden.unblur.slow {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1.8s;
+  }
+
+  .show.unblur.slow {
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  /*slide from left slow, unblur*/
+  .animate-slide-left.slow {
+    filter: motionBlur(0deg, 100%);
+    transform: translateX(-40%); /* Initially, off-screen to the left */
+    transition: opacity 1s, transform 1.8s;
+  }
+
+  .show.animate-slide-left.slow {
+    opacity: 1; /* When shown, make it visible */
+    transform: translateX(0); /* Sliding in from the left when shown */
+  }
+
+  /*slide from right slow, unblur*/
+  .animate-slide-right.slow {
+    filter: motionBlur(0deg, 100%);
+    transform: translateX(40%); /* Initially, off-screen to the right */
+    transition: opacity 1s, transform 1.8s;
+  }
+
+  .show.animate-slide-right.slow {
+    opacity: 1; /* When shown, make it visible */
+    transform: translateX(0); /* Sliding in from the right when shown */
+  }
+
+  /*slide from down, upwards, average speed*/
+  .animate-slide-up {
+    transform: translateY(30%); /* Initially, off-screen to the right */
+    transition: opacity 1s, transform 1.8s;
+  }
+
+  .show.animate-slide-up {
+    opacity: 1; /* When shown, make it visible */
+    transform: translateY(0); /* Sliding in from the right when shown */
+  }
+
+  /*ICON TEXT CHAIN ANIMATION*/
+  @keyframes staggered-reveal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes staggered-hide {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .text-chain {
+    animation: staggered-reveal 1s ease both;
+  }
+
+  .text-chain:nth-child(1) {
+    animation-delay: 200ms;
+  }
+
+  .text-chain:nth-child(2) {
+    animation-delay: 400ms;
+  }
+
+  .text-chain:nth-child(3) {
+    animation-delay: 600ms;
+  }
+
+  .text-chain.reverse {
+    animation: staggered-hide 1s ease both;
+  }
+
+  .text-chain.reverse:nth-child(1) {
+    animation-delay: 200ms;
+  }
+
+  .text-chain.reverse:nth-child(2) {
+    animation-delay: 400ms;
+  }
+
+  .text-chain.reverse:nth-child(3) {
+    animation-delay: 600ms;
+  }
+
+  /* Apply a staggered delay to each card */
+  .card-to-animate:nth-child(1) {
+    animation-delay: 1000ms;
+  }
+
+  .card-to-animate:nth-child(2) {
+    animation-delay: 1500ms;
+  }
+
+  .card-to-animate:nth-child(3) {
+    animation-delay: 2000ms;
+  }
+}
+
+@media (max-width: 576px) {
+  #embed_yt {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
