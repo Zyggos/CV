@@ -15,17 +15,20 @@ $(document).ready(function () {
 
     // Array of title content for each slide
     const slideTitle = [
+      "Web-Craft Academy",
       "Convolutional Neural Network",
       "knn and nearest centroid classifier",
     ];
 
     // Array of title content for each slide
     const slideText = [
+      "A dynamic PHP/SQL website build for Tutors and Students to interact, see new announcements, documents and assignments.",
       " A Convolutional Neural Network build with Pytorch to train on the CIFAR-10 dataset and correctly classify images.",
       "A program that uses these 2 model with the CIFAR-10 dataset to find their accuracy on classifying images.",
     ];
 
     const slideLink = [
+      "https://github.com/Zyggos/WebCraft-Academy",
       "https://github.com/Zyggos/CNN",
       "https://github.com/Zyggos/knn-centroid-classifiers",
     ];
